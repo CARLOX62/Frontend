@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        main {
+            background-color: yellow;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* class Selector */
+        .red {
+            background-color: red;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Id Selector */
+        #blue {
+            background-color: blue;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Child Selector */
+        div>p {
+            background-color: green;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Descendant Selector */
+        div p {
+            background-color: orange;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Class Selector */
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        p:first-child {
+            background-color: purple;
+        }
+
+        /* group selector */
+        h1 {
+            color: red;
+        }
+
+        p,
+        a {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>i am first</p>
+        <p>i am a div</p>
+    </main>
+    <div class="red">
+        I am aniket Kumar
+        <article>
+            <p>i am a div</p>
+        </article>
+    </div>
+    <div id="blue">
+        my name is aniket
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook2.com">Facebook</a>
+    <h1>CodeWithHarry</h1>
+    <p>This is the p tag</p>
+    <a href="#">This is the anchor (a) tag</a>
+</body>
+
+</html>
