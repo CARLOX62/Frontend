@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specific & cascade</title>
+    <style>
+        /* the specificity of this selector is 1 */
+        h1 {
+            color: blue;
+        }
+
+        /* the specificity of this selector is 10 */
+
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* the specificity of this selector is 10 */
+
+        .cred {
+            color: red;
+        }
+
+        /* the specificity of this selector is 10 */
+
+        .cpurple {
+            color: purple;
+        }
+
+        /* this is the example of attribute selector the specificity of this selector is 10*/
+
+        [data-x="a"] {
+            background-color: green;
+        }
+
+        p {
+            color: red !important;
+        }
+
+        p {
+            color: blue;
+        }
+
+        /* 1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41 */
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">hello world</h1>
+        <p style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <a class="harryclass rohan-class" href="#">this is a link</a>
+    </div>
+</body>
+
+</html>
