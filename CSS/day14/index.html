@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media Queries</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+        @media  screen and (orientation: portrait) {
+            body{
+                border: 2px solid purple;
+            }
+        }
+
+        /* When screen is 600px or smaller */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: aqua;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        my name is aniket kumar.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

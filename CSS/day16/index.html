@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: rgb(234, 138, 12);
+        } */
+        /* .box::first-line{
+            color: aqua;
+        } */
+        /* .boxes * {
+            color: blueviolet;
+            border: 2px solid rgb(25, 8, 42);
+
+        } */
+        /* p, a, .box,[data-color = "primary"]{
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: brown;
+
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: brown;
+        } */
+
+        .boxes::after{
+            content: "Aniket is Good";
+            color: #c51a1a;
+        }
+        ::selection{
+            color: #c51a1a;
+            background-color: blue;
+        }
+        .box::first-letter{
+            color: chartreuse;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: rgb(5, 5, 12);
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div  data-color = "primary" class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt cum repudiandae, rem deserunt
+            saepe omnis aspernatur voluptate est, et beatae ad tempore sed accusamus, veritatis magni. Ab ducimus,
+            obcaecati animi culpa assumenda non blanditiis dolores maiores molestiae repudiandae quo numquam consectetur
+            aperiam delectus labore. Explicabo, incidunt nobis. Minima incidunt ut fuga architecto! Itaque laborum
+            maxime nisi porro consequuntur saepe corrupti praesentium. Labore corporis accusantium culpa nobis facilis
+            eos inventore consequuntur amet porro, optio iusto reprehenderit perspiciatis incidunt laborum nam dolorem
+            ut sequi molestias eaque assumenda quaerat! Labore, facilis? Dolores, sapiente, ipsum vitae eveniet ullam ea
+            sunt praesentium sed minus in dicta vero adipisci! Ipsa rem molestias ratione nesciunt vero deserunt
+            voluptates nemo officia sit, tempore nostrum esse voluptas alias facere veritatis nihil minima, quos ea,
+            perspiciatis deleniti qui ut recusandae dolor voluptate? Suscipit saepe iure molestiae ex necessitatibus ut
+            iste nemo incidunt eum, reprehenderit doloremque laborum veritatis dicta totam facere, commodi natus dolor
+            quibusdam vel. Tempore, dolores repellendus quae mollitia fugiat suscipit laborum? Ratione provident
+            similique natus quaerat eius aut aliquam sunt placeat, quas eaque, mollitia laborum voluptatibus doloribus
+            ipsum? Illo obcaecati deserunt, quia, perferendis debitis excepturi quam nobis neque tempore eius magni
+            officia deleniti distinctio temporibus praesentium delectus ut quas. Molestias modi ex quaerat reprehenderit
+            ipsa esse rem assumenda, alias excepturi iste a praesentium laborum ipsum illum veritatis harum sed fugiat.
+        </div>
+        <div class="box">Hey I am Aniket</div>
+        <div class="box">Hey I am Aniket</div>
+        <input type="text" placeholder="Type Your Name">
+    </div>
+</body>
+
+</html>

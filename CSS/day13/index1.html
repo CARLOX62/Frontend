@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variable Override</title>
+  <style>
+    :root {
+      --box-bg: lightcoral;
+      --box-color: white;
+    }
+
+    .box {
+      background: var(--box-bg);
+      color: var(--box-color);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    /* Override variable inside container */
+    .container {
+      --box-bg: teal;
+      --box-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">I use global variable (lightcoral bg)</div>
+
+  <div class="container">
+    <div class="box">I use overridden variable (teal bg, yellow text)</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid blueviolet;
+            display: flow-root;
+        }
+        img{
+            float: left;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cards">
+        <img src="image.jpg" alt="" width="230px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nobis, culpa consectetur voluptates ipsum neque perspiciatis, est beatae quae fuga possimus? Repellendus iure, saepe quo blanditiis non laboriosam reiciendis explicabo!</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos mollitia dolore? Molestiae ducimus necessitatibus iure eaque nobis consequuntur quaerat ea nisi dolores ad! Ducimus explicabo aspernatur libero iure esse veniam ex, inventore nam sit cupiditate accusantium doloribus placeat, tempora eum officiis dolores! Blanditiis obcaecati illo quasi harum itaque, soluta, repellat accusamus cum distinctio eaque nam voluptatem voluptates non beatae doloribus maiores iure deleniti. Illum error odit, accusamus nisi earum ipsum blanditiis alias, rem ea fugiat aperiam minus minima quae nobis doloribus dignissimos perferendis neque corporis id facere rerum. Perspiciatis quasi beatae deleniti facere atque soluta aut, tenetur sequi excepturi amet repudiandae ab reprehenderit officia animi quos molestiae, officiis nostrum, odio a? Ut, laboriosam. Sunt sapiente praesentium aliquam facere cumque rerum soluta fuga deleniti facilis similique, nisi commodi asperiores aliquid ab tempora enim quasi doloremque cupiditate sed nesciunt fugit libero? Eum aspernatur soluta adipisci provident iste incidunt. Enim numquam ex deserunt vero, consequatur magni illo sed consequuntur autem ipsa, ullam molestias delectus laborum reiciendis doloribus inventore sapiente quibusdam possimus laboriosam. Delectus, ipsam fugit voluptates earum autem at aperiam totam, magni incidunt inventore provident sint animi corrupti. Odio molestias quaerat autem ducimus cum, magni tempora laborum unde fugiat quae ipsa rem nostrum tenetur itaque provident corporis obcaecati perspiciatis eum eveniet. Rerum quasi enim numquam molestiae aut esse fugit deleniti corrupti cumque harum ex mollitia dolore, eveniet reprehenderit aperiam doloremque voluptatem ipsum temporibus culpa iure?</div>
+        <div class="card">card2</div>
+        <div class="card">card3</div>
+        <div class="card">card4</div>
+    </div>
+</body>
+</html>
