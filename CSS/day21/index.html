@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vh;
+            background-color: #f0f0f0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: moveAndRotate 4s 4 reverse ease-in-out;
+        }
+        @keyframes moveAndRotate {
+            0% {
+                transform: translateX(-100) rotate(0deg);
+                background-color: #3498db;
+            }
+            25% {
+                transform: translateY(100px) rotate(45deg);
+                background-color: #2ecc71;
+            }
+
+            50% {
+                transform: translateX(-100px) rotate(180deg);
+                background-color: #e74c3c;
+            }
+            75% {
+                transform: translateY(100px) rotate(270deg);
+                background-color: #f1c40f;
+            }
+            100% {
+                transform: translateX(-100) rotate(360deg);
+                background-color: #3498db;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

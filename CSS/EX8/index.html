@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX2</title>
+    <style>
+        .box {
+            width: 121px;
+            height: 121px;
+            background-color: red;
+            margin: auto;
+            border-radius: 70px;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            animation: moveX 3s linear infinite,
+                       moveY 1s ease-out infinite alternate;
+        }
+        .contaniner {
+            width: 80vh;
+            height: 80vh;
+            border: 2px solid black;
+            position: relative;
+            margin: auto;
+            background-color: lightgray;
+        }
+        @keyframes moveX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes moveY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="contaniner">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

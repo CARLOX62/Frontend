@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s ease;
+        }
+
+        /* .box {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            /* transition: transform 0.5s ease;
+            transition-property: background-color,transform; */
+            /* transition-duration: 3s; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-delay: 1s; */
+        /* } */ */
+
+        .translate {
+            transform: translateX(100px) rotate(360deg) scale(0.5) translateY(50px);
+            background-color: lightgreen;
+        }
+
+        .container:hover {
+            background-color: lightcoral;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            background: rgb(17, 224, 89);
+            border: 2px solid navy;
+            transition: all 2s;
+        }
+
+        .box:hover {
+            width: 200px;
+            height: 200px;
+            background: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+
+</html>
