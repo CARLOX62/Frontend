@@ -1,0 +1,29 @@
+<!-- // The Local Storage Manager: You are working on a note-taking app, and you want to implement a function named saveNoteToLocalStorage that takes a note object and saves it to the browser's local storage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saveNoteToLocalStorage(note) {
+            // Convert the note object to a JSON string
+            const noteString = JSON.stringify(note);
+            // Save the JSON string to local storage with a unique key
+            localStorage.setItem(`note_${note.id}`, noteString);
+        }
+
+        // Example usage:
+        const myNote = {
+            id: 1,
+            title: "Meeting Notes",
+            content: "Discuss project timeline and deliverables."
+        };
+
+        saveNoteToLocalStorage(myNote);
+    </script>
+</body>
+</html>
