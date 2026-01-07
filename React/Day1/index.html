@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why React?</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+        .box1 {
+            background-color: red;
+        }
+        .box2 {
+            background-color: green;
+        }
+        .box3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">Aniket</div>
+    <div class="box box2">Sonu</div>
+    <div class="box box3">Ankit</div>
+    <script>
+        // JavaScript code can be added here if needed
+        setTimeout(() => {
+            document.querySelector(".box1").innerHTML = "Hey"
+        }, 1000);
+
+        setTimeout(() => {
+            document.querySelector(".box2").innerHTML = "Hi"
+        }, 2000);
+
+        setTimeout(() => {
+            document.querySelector(".box3").innerHTML = "Hello"
+        }, 3000);
+    </script>
+</body>
+</html>
+
+<!-- Why React?
+--We can use states which means that once we update the state variable, it changes across the page
+--We can split our app into multiple components and reuse those components
+--React uses a virtual DOM to efficiently update the UI which is better than updating content using DOM Manipulation
+--Debugging and maintainance is easy -->
