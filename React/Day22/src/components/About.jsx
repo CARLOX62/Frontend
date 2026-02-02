@@ -1,0 +1,19 @@
+import React from 'react'
+import Navbar from './Navbar.jsx'
+import { useNavigate } from 'react-router-dom'
+
+const About = () => {
+    const navigate = useNavigate();
+    function handleClick(){
+        navigate('/dashboard');
+    }
+
+  return (
+    <div>
+      <h1>About</h1>
+        <button onClick={handleClick}>Go to Dashboard</button>
+    </div>
+  )
+}
+
+export default About
